@@ -9,7 +9,7 @@ import { Container, Content2Xl, ContentWithVerticalPadding } from "components/mi
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { LogoLink } from "test/components/THeader.js";
+import { LogoLink } from "components/header/THeader.js";
 import { SectionHeading as HeadingBase } from "components/misc/Headings";
 import { SectionDescription as DescriptionBase } from "components/misc/Typography";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";

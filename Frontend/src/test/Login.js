@@ -8,7 +8,7 @@ import illustration from "images/login-illustration.svg";
 import logo from "images/logo.svg";
 import googleIconImageSrc from "images/google-icon.png";
 import Footer from "components/footers/MiniCenteredFooter.js";
-import Header from "./components/THeader"
+import Header from "../components/header/THeader"
 import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
 

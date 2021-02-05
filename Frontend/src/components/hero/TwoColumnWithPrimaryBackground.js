@@ -6,7 +6,7 @@ import HeaderBase, {
   NavLinks,
   NavLink as NavLinkBase,
   PrimaryLink as PrimaryLinkBase
-} from "../../test/components/THeader.js";
+} from "../header/THeader.js";
 import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";

@@ -5,7 +5,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Footer from "components/footers/MiniCenteredFooter.js";
-import Header from "./components/THeader"
+import Header from "../components/header/THeader"
 import { SectionHeading } from "components/misc/Headings";
 
 const HeadingRow = tw.div`flex`;
