@@ -4,25 +4,27 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/BackgroundAsImage.js";
-import Features from "components/features/DashedBorderSixFeatures";
+import Features from "components/features/ThreeColWithSideImage";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
+import Pricing from 'components/pricing/TwoPlansWithDurationSwitcher.js'
+import Cards from 'components/cards/ThreeColSlider.js'
 
 export default () => (
   <AnimationRevealPage>
-    <Hero />
-    <MainFeature />
-    <Features />
-    <MainFeature2 />
-    <Portfolio />
-    <Testimonial
+    <Hero /> {/* Cabecera */}
+    <MainFeature /> {/* Que es */}
+    <Features /> {/* Caracteristicas */}
+    <MainFeature2 />  {/* Caracteristicas 2 */}
+    <Cards /> {/* Lista de algunos negocios usando el producto*/}
+    <Testimonial // TODO: Adaptar este componente para describir paso a paso como se usa la app
       subheading="Testimonials"
       heading={
         <>
@@ -65,8 +67,8 @@ export default () => (
         </>
       }
     />
-    <Blog />
-    <ContactUsForm />
+    <Pricing />
+      <ContactUsForm/>
     <Footer />
   </AnimationRevealPage>
 );

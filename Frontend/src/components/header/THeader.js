@@ -15,7 +15,7 @@ const Header = tw.header`
   max-w-screen-xl mx-auto
 `;
 
-export const NavLinks = tw.div`inline-block`;
+export const NavLinks = tw.div`inline-block `;
 
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
@@ -59,15 +59,15 @@ export const DesktopNavLinks = tw.nav`
 // Global header navigation links
 export const defaultLinks = [
   <NavLinks key={1}>
-    <NavLink href="/#">¿Qué es?</NavLink>
-    <NavLink href="/#">¿Cómo funciona?</NavLink>
-    <NavLink href="/#">Demo</NavLink>
-    <NavLink href="/#">Precios</NavLink>
-    <NavLink href="/#">Contacto</NavLink>
-    <NavLink href="/#" tw="lg:ml-12!">
-      Acceso Clientes
+    <NavLink href="/#about">¿Qué es?</NavLink>
+    <NavLink href="/#how">¿Cómo funciona?</NavLink>
+    <NavLink href="/#pricing">Precios</NavLink>  
+    <NavLink href="/#contact">Contacto</NavLink>
+
+    <NavLink href="/login" tw="lg:ml-20!">
+      Acceso clientes
     </NavLink>
-    <PrimaryLink css={false && tw`rounded-full`}href="/#">Registro</PrimaryLink>
+    <PrimaryLink css={false && tw`rounded-full`}href="/register">Registro</PrimaryLink>
   </NavLinks>
 ];
 
@@ -79,7 +79,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Treact
+      QR.menu
     </LogoLink>
   );
 
@@ -102,6 +102,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
         </NavToggle>
       </MobileNavLinksContainer>
+      
     </Header>
   );
 };
