@@ -56,25 +56,25 @@ const IllustrationImage = styled.div`
 `;
 
 export default ({
-  logoLinkUrl = "#",
+  logoLinkUrl = "/",
   illustrationImageSrc = illustration,
-  headingText = "Sign In To Treact",
+  headingText = "Iniciar Sesión",
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
-      text: "Sign In With Google",
+      text: "Acceder con Google",
       url: "https://google.com"
     },
     {
       iconImageSrc: twitterIconImageSrc,
-      text: "Sign In With Twitter",
+      text: "Acceder con Twitter",
       url: "https://twitter.com"
     }
   ],
-  submitButtonText = "Sign In",
+  submitButtonText = "Acceder",
   SubmitButtonIcon = LoginIcon,
   forgotPasswordUrl = "#",
-  signupUrl = "#",
+  signupUrl = "/register",
 
 }) => (
   <AnimationRevealPage>
@@ -84,6 +84,11 @@ export default ({
           <LogoLink href={logoLinkUrl}>
             <LogoImage src={logo} />
           </LogoLink>
+          <p tw="mt-2 text-sm text-gray-600 text-center">
+                <a href="/" tw="border-b border-gray-500 border-dotted">
+                  Volver a inicio
+                </a> 
+            </p>
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
@@ -98,26 +103,26 @@ export default ({
                 ))}
               </SocialButtonsContainer>
               <DividerTextContainer>
-                <DividerText>Or Sign in with your e-mail</DividerText>
+                <DividerText>O inicia sesión con E-mail</DividerText>
               </DividerTextContainer>
               <Form>
                 <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
+                <Input type="password" placeholder="Contraseña" />
                 <SubmitButton type="submit">
-                  <SubmitButtonIcon className="icon" />
+                  <SubmitButtonIcon className="icon"/>
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
               </Form>
               <p tw="mt-6 text-xs text-gray-600 text-center">
                 <a href={forgotPasswordUrl} tw="border-b border-gray-500 border-dotted">
-                  Forgot Password ?
+                  ¿Olvidaste tu contraseña?
                 </a>
               </p>
               <p tw="mt-8 text-sm text-gray-600 text-center">
-                Dont have an account?{" "}
+                ¿No tienes una cuenta?{" "}
                 <a href={signupUrl} tw="border-b border-gray-500 border-dotted">
-                  Sign Up
-                </a>
+                  Registro
+                </a> 
               </p>
             </FormContainer>
           </MainContent>
