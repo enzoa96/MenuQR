@@ -1,9 +1,9 @@
 import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { Container as ContainerBase, ContentWithPaddingXl } from "components/misc/Layouts";
-import { SectionDescription } from "components/misc/Typography";
+import { SectionHeading, Subheading as SubheadingBase } from "main/components/misc/Headings.js";
+import { Container as ContainerBase, ContentWithPaddingXl } from "main/components/misc/Layouts";
+import { SectionDescription } from "main/components/misc/Typography";
 
 const Container = tw(ContainerBase)`my-8 lg:my-10 bg-primary-900 text-gray-100 -mx-8 px-8`;
 const HeadingContainer = tw.div``;

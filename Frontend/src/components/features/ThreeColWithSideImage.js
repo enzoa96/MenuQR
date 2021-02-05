@@ -3,8 +3,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
+import { SectionHeading, Subheading as SubheadingBase } from "main/components/misc/Headings.js";
+import { SectionDescription } from "main/components/misc/Typography.js";
 
 import defaultCardImage from "images/shield-icon.svg";
 

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { ContentWithPaddingXl, Container } from "components/misc/Layouts.js";
-import { SectionHeading as Heading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import { ContentWithPaddingXl, Container } from "main/components/misc/Layouts.js";
+import { SectionHeading as Heading, Subheading as SubheadingBase } from "main/components/misc/Headings.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 

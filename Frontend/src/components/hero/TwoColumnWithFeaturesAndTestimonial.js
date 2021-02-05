@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import HeaderBase, { NavLinks, NavLink, PrimaryLink } from "components/header/THeader.js";
-import { SectionHeading } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { Container, ContentWithVerticalPadding } from "components/misc/Layouts.js";
+import HeaderBase, { NavLinks, NavLink, PrimaryLink } from "../../main/components/THeader";
+import { SectionHeading } from "main/components/misc/Headings.js";
+import { SectionDescription } from "main/components/misc/Typography.js";
+import { PrimaryButton as PrimaryButtonBase } from "main/components/misc/Buttons.js";
+import { Container, ContentWithVerticalPadding } from "main/components/misc/Layouts.js";
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"

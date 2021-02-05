@@ -3,13 +3,13 @@ import "styles/globalStyles.css";
 import React from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import Homepage from "test/Homepage.js"
-import Register from "test/Register.js"
-import Login from "test/Login.js"
-import PrivacyPolicy from "test/PrivacyPolicy.js"
-import TermsOfService from "test/TermsOfService.js"
+import ComponentRenderer from "demos/ComponentRenderer.js";
+import MainLandingPage from "demos/MainLandingPage.js";
+import Homepage from "main/Homepage.js"
+import Register from "main/Register.js"
+import Login from "main/Login.js"
+import PrivacyPolicy from "main/PrivacyPolicy.js"
+import TermsOfService from "main/TermsOfService.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -46,3 +46,4 @@ export default function App() {
     </Router>
   );
 }
+

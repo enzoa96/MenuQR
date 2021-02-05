@@ -3,16 +3,16 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Rnd } from "react-rnd";
 import { motion } from "framer-motion";
 
-import { components } from "ComponentRenderer.js";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
+import { components } from "demos/ComponentRenderer.js";
+import AnimationRevealPage from "main/components/helpers/AnimationRevealPage.js";
+import { Container, Content2Xl, ContentWithVerticalPadding } from "main/components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { LogoLink } from "components/header/THeader.js";
-import { SectionHeading as HeadingBase } from "components/misc/Headings";
-import { SectionDescription as DescriptionBase } from "components/misc/Typography";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { LogoLink } from "main/components/THeader"
+import { SectionHeading as HeadingBase } from "main/components/misc/Headings";
+import { SectionDescription as DescriptionBase } from "main/components/misc/Typography";
+import { PrimaryButton as PrimaryButtonBase } from "main/components/misc/Buttons.js";
 
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as HandleIcon } from "images/handle-icon.svg";

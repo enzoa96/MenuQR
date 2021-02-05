@@ -6,11 +6,11 @@ import HeaderBase, {
   NavLinks,
   NavLink as NavLinkBase,
   PrimaryLink as PrimaryLinkBase
-} from "../header/THeader.js";
-import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
-import { SectionHeading } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+} from "../../main/components/THeader.js";
+import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "main/components/misc/Layouts.js";
+import { SectionHeading } from "main/components/misc/Headings.js";
+import { SectionDescription } from "main/components/misc/Typography.js";
+import { PrimaryButton as PrimaryButtonBase } from "main/components/misc/Buttons.js";
 import logoImageSrc from "images/logo-light.svg";
 import serverIllustrationImageSrc from "images/server-illustration-2.svg";
 

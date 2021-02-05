@@ -3,8 +3,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { NavLink, NavLinks, defaultLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../header/THeader.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import Header, { NavLink, NavLinks, defaultLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "./THeader.js";
+import ResponsiveVideoEmbed from "./helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}

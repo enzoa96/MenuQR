@@ -1,15 +1,15 @@
 import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "main/components/helpers/AnimationRevealPage.js";
 import Hero from "components/hero/FullWidthWithImage.js";
 import Features from "components/features/ThreeColSimple.js";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
-import SliderCard from "components/cards/ThreeColSlider.js";
+import SliderCard from "main/components/Cards.js";
 import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 import Blog from "components/blogs/PopularAndRecentBlogPosts.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
-import FAQ from "components/faqs/SimpleWithSideImage.js";
+import FAQ from "main/components/FAQ.js";
 import SubscribeNewsLetterForm from "components/forms/SimpleSubscribeNewsletter.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import Footer from "main/components/Footer.js";
 
 export default () => (
   <AnimationRevealPage>

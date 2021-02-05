@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../header/THeader.js";
+import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../../main/components/THeader.js";
 
 const StyledHeader = styled(Header)`
   ${tw`justify-between`}

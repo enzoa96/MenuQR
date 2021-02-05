@@ -1,6 +1,6 @@
 import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container as ContainerBase } from "components/misc/Layouts";
+import AnimationRevealPage from "main/components/helpers/AnimationRevealPage.js";
+import { Container as ContainerBase } from "main/components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -82,6 +82,11 @@ export default ({
           <LogoLink href={logoLinkUrl}>
             <LogoImage src={logo} />
           </LogoLink>
+          <p tw="mt-2 text-sm text-gray-600 text-center">
+                <a href="/" tw="border-b border-gray-500 border-dotted">
+                  Volver a inicio
+                </a> 
+            </p>
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
@@ -100,11 +105,8 @@ export default ({
               </DividerTextContainer>
               <Form>
                 <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
-                <SubmitButton type="submit">
-                  <SubmitButtonIcon className="icon" />
-                  <span className="text">{submitButtonText}</span>
-                </SubmitButton>
+                <Input type="password" placeholder="Contraseña" />
+                <Input type="password" placeholder="Confirmar contraseña" />
                 <p tw="mt-6 text-xs text-gray-600 text-center">
                   I agree to abide by treact's{" "}
                   <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
@@ -115,6 +117,10 @@ export default ({
                     Privacy Policy
                   </a>
                 </p>
+                <SubmitButton type="submit">
+                  <SubmitButtonIcon className="icon" />
+                  <span className="text">{submitButtonText}</span>
+                </SubmitButton>
 
                 <p tw="mt-8 text-sm text-gray-600 text-center">
                   Already have an account?{" "}

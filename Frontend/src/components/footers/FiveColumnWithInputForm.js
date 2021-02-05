@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { PrimaryButton as PrimaryButtonBase } from "main/components/misc/Buttons.js";
 
 import LogoImage from "images/logo.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
