@@ -7,10 +7,10 @@ import {css} from "styled-components/macro"; //eslint-disable-line
 import illustration from "images/login-illustration.svg";
 import logo from "images/logo.svg";
 import googleIconImageSrc from "images/google-icon.png";
-import Footer from "main/components/Footer.js";
-import Header from "./components/THeader"
 import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
+
+import { LeftOutlined } from "@ant-design/icons"
 
 const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
@@ -81,14 +81,14 @@ export default ({
     <Container>
       <Content>
         <MainContainer>
+        <p tw="mb-5 text-sm text-black text-center">
+          <LeftOutlined style={{ fontSize: 18 }} /> <a href="/" tw="border-b border-gray-500 border-dotted">
+                Volver a inicio
+                </a> 
+            </p>
           <LogoLink href={logoLinkUrl}>
             <LogoImage src={logo} />
           </LogoLink>
-          <p tw="mt-2 text-sm text-gray-600 text-center">
-                <a href="/" tw="border-b border-gray-500 border-dotted">
-                  Volver a inicio
-                </a> 
-            </p>
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
