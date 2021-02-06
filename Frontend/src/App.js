@@ -8,6 +8,7 @@ import MainLandingPage from "demos/MainLandingPage.js";
 import Homepage from "main/Homepage.js"
 import Register from "main/Register.js"
 import Login from "main/Login.js"
+import Menu from "main/MenuPage/Menu.js"
 import PrivacyPolicy from "main/PrivacyPolicy.js"
 import TermsOfService from "main/TermsOfService.js"
 
@@ -38,6 +39,9 @@ export default function App() {
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
+        </Route>
+        <Route path="/menu">
+          <Menu />
         </Route>
         <Route path="/">
           <Homepage />

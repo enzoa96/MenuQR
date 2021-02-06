@@ -65,7 +65,7 @@ import VerticalWithAlternateImageAndTextFeatures from "components/features/Verti
 import SliderCards from "main/components/Cards.js";
 import TrendingCards from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 import PortfolioCards from "components/cards/PortfolioTwoCardsWithImage.js";
-import TabGridCards from "components/cards/TabCardGrid.js";
+import TabGridCards from "main/MenuPage/TabCardGrid.js";
 import ProfileThreeColGridCards from "components/cards/ProfileThreeColGrid.js"
 import ThreeColContactDetailsCards from "components/cards/ThreeColContactDetails.js"
 
