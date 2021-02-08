@@ -2,12 +2,14 @@ import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import React from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import "antd/dist/antd.css";
 
 import ComponentRenderer from "demos/ComponentRenderer.js";
 import MainLandingPage from "demos/MainLandingPage.js";
 import Homepage from "main/Homepage.js"
 import Register from "main/Register.js"
 import Login from "main/Login.js"
+import Dashboard from "main/DashboardPage/Dashboard.js"
 import Menu from "main/MenuPage/Menu.js"
 import PrivacyPolicy from "main/PrivacyPolicy.js"
 import TermsOfService from "main/TermsOfService.js"
@@ -42,6 +44,9 @@ export default function App() {
         </Route>
         <Route path="/menu">
           <Menu />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
         <Route path="/">
           <Homepage />
